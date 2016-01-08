@@ -6,6 +6,6 @@ My Althorithm Practice
 
 |#|Title|Solution|Difficulty|
 | --- |---|---|---|
-|1||||
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)|[Java]()|Medium|
 |||||
 |||||
