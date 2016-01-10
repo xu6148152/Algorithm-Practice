@@ -1,5 +1,6 @@
 package com.binea.www.leetcodepractice;
 
+import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import org.junit.Test;
 
@@ -15,5 +16,11 @@ public class UnitTest {
         for(int i = 0;i<ints.length;i++){
             System.out.print(ints[i] + " ");
         }
+    }
+
+    @Test public void testLongestSubString() {
+        String s = "abcabcabd";
+        LongestSubString lss = new LongestSubString();
+        System.out.print(lss.lengthOfLongestSubstring(s));
     }
 }
