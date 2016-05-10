@@ -1,7 +1,9 @@
 package com.binea.www.leetcodepractice;
 
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
+import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
+import java.util.List;
 import org.junit.Test;
 
 /**
@@ -22,5 +24,12 @@ public class UnitTest {
         String s = "abcabcabd";
         LongestSubString lss = new LongestSubString();
         System.out.print(lss.lengthOfLongestSubstring(s));
+    }
+
+    @Test public void testTopKFrequent() {
+        int[] nums = {1,1,1,2,2,3};
+        int k = 2;
+        List<Integer> results = TopKFrequent.topKFrequent(nums, k);
+        System.out.print(results.toString());
     }
 }
