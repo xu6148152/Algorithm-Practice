@@ -1,6 +1,7 @@
 package com.binea.www.leetcodepractice;
 
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
+import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
@@ -38,5 +39,11 @@ public class UnitTest {
         int[] prices = {100, 200, 150, 180, 300};
         int profit = BestTimeToBuyAndSellStockII.maxProfit(prices);
         System.out.print(profit);
+    }
+
+    @Test public void testCountAndSay() {
+        int nums = 20;
+        String result = CountAndSay.countAndSay(nums);
+        System.out.print(result);
     }
 }
