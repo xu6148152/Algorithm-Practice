@@ -40,6 +40,7 @@ public class BinaryTree {
         }
     }
 
+    // preorder中序 inorder前序
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return helper(0, 0, inorder.length - 1, preorder, inorder);
     }
