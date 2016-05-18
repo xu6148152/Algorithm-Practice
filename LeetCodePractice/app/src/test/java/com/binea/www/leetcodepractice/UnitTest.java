@@ -2,6 +2,7 @@ package com.binea.www.leetcodepractice;
 
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
+import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
@@ -14,10 +15,10 @@ import org.junit.Test;
 public class UnitTest {
 
     @Test public void testTwoSum() {
-        int[] numbers = {2, 7, 11, 15};
+        int[] numbers = { 2, 7, 11, 15 };
         TwoSum twoSum = new TwoSum();
         final int[] ints = twoSum.twoSum(numbers, 13);
-        for(int i = 0;i<ints.length;i++){
+        for (int i = 0; i < ints.length; i++) {
             System.out.print(ints[i] + " ");
         }
     }
@@ -29,14 +30,14 @@ public class UnitTest {
     }
 
     @Test public void testTopKFrequent() {
-        int[] nums = {1,1,1,2,2,3};
+        int[] nums = { 1, 1, 1, 2, 2, 3 };
         int k = 2;
         List<Integer> results = TopKFrequent.topKFrequent(nums, k);
         System.out.print(results.toString());
     }
 
     @Test public void testMaxProfit() {
-        int[] prices = {100, 200, 150, 180, 300};
+        int[] prices = { 100, 200, 150, 180, 300 };
         int profit = BestTimeToBuyAndSellStockII.maxProfit(prices);
         System.out.print(profit);
     }
@@ -45,5 +46,13 @@ public class UnitTest {
         int nums = 20;
         String result = CountAndSay.countAndSay(nums);
         System.out.print(result);
+    }
+
+    @Test public void testFirstMissingPositive() {
+        //int[] nums = { 3, 4, -1, 1 };
+        //int[] nums = {1,2,0};
+        int[] nums = {2};
+        int value = FirstMissingPositive.firstMissingPositive(nums);
+        System.out.print(value);
     }
 }
