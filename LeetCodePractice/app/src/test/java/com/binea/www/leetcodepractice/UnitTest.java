@@ -4,6 +4,7 @@ import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
+import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import java.util.List;
@@ -49,10 +50,16 @@ public class UnitTest {
     }
 
     @Test public void testFirstMissingPositive() {
-        //int[] nums = { 3, 4, -1, 1 };
+        int[] nums = { 3, 4, -1, 1 };
         //int[] nums = {1,2,0};
-        int[] nums = {2};
+        //int[] nums = {2};
         int value = FirstMissingPositive.firstMissingPositive(nums);
         System.out.print(value);
+    }
+
+    @Test public void testReverseInteger() {
+        int value = -123;
+        int result = ReverseInteger.reverse(value);
+        System.out.print(result);
     }
 }
