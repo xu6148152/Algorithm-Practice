@@ -18,4 +18,5 @@ My Althorithm Practice
 |10|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbinea%2Fwww%2Fleetcodepractice%2Falgorithm%2FReverseKGroup.java)|Hard|
 |11|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbinea%2Fwww%2Fleetcodepractice%2Falgorithm%2FFirstMissingPositive.java)|Hard|
 |12|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbinea%2Fwww%2Fleetcodepractice%2Falgorithm%2FReverseInteger.java)|Easy|
+|13|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SuperUglyNumber.java)|Medium|
 
