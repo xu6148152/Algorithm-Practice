@@ -19,4 +19,4 @@ My Althorithm Practice
 |11|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbinea%2Fwww%2Fleetcodepractice%2Falgorithm%2FFirstMissingPositive.java)|Hard|
 |12|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice%2Fapp%2Fsrc%2Fmain%2Fjava%2Fcom%2Fbinea%2Fwww%2Fleetcodepractice%2Falgorithm%2FReverseInteger.java)|Easy|
 |13|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SuperUglyNumber.java)|Medium|
-
+|14|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MinSubArrayLen.java)|Medium|
