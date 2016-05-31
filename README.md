@@ -21,5 +21,5 @@ My Althorithm Practice
 |13|[Super Ugly Number](https://leetcode.com/problems/super-ugly-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SuperUglyNumber.java)|Medium|
 |14|[Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MinSubArrayLen.java)|Medium|  
 |15|[Minium path sum](https://leetcode.com/problems/minimum-path-sum/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MinPathSum.java)|Medium|  
-|16|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MergeSortedArray.java)|Medium|
+|16|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MergeSortedArray.java)|Easy|
 
