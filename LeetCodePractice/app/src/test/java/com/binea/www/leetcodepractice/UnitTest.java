@@ -8,6 +8,7 @@ import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
+import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import java.util.List;
 import org.junit.Test;
 
@@ -68,5 +69,11 @@ public class UnitTest {
         int[] nums = {2,3,1,2,4,3};
         int len = MinSubArrayLen.minSubArrayLen(7, nums);
         System.out.print(len);
+    }
+
+    @Test public void testZigZagConversion() {
+        String text = "PAYPALISHIRING";
+        String result = ZigZagConversion.convert14ms(text, 3);
+        System.out.print(result);
     }
 }

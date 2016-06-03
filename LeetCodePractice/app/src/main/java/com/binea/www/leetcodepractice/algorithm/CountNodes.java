@@ -64,7 +64,15 @@ public class CountNodes {
     }
 
     private static int height(TreeNode root) {
-        return root == null ? -1 : height(root.left) + 1;
+        if (root == null) {
+            return -1;
+        }
+        int height = 0;
+        while (root != null) {
+            height++;
+            root = root.left;
+        }
+        return height;
     }
 
     public int countNodes70ms(TreeNode root) {
