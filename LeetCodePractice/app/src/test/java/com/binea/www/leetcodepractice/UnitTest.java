@@ -6,6 +6,7 @@ import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
+import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
@@ -66,7 +67,7 @@ public class UnitTest {
     }
 
     @Test public void testMinSubArrayLen() {
-        int[] nums = {2,3,1,2,4,3};
+        int[] nums = { 2, 3, 1, 2, 4, 3 };
         int len = MinSubArrayLen.minSubArrayLen(7, nums);
         System.out.print(len);
     }
@@ -74,6 +75,13 @@ public class UnitTest {
     @Test public void testZigZagConversion() {
         String text = "PAYPALISHIRING";
         String result = ZigZagConversion.convert14ms(text, 3);
+        System.out.print(result);
+    }
+
+    @Test public void testReverseWords() {
+        //String text = "the sky is blue";
+        String text = "   a   b ";
+        String result = ReverseWords.reverseWords14ms(text);
         System.out.print(result);
     }
 }
