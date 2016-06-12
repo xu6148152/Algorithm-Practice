@@ -31,3 +31,4 @@ My Althorithm Practice
 |23|[Path Sum](https://leetcode.com/problems/path-sum/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/PathSum.java)|Easy|
 |23|[BSTIterator](https://leetcode.com/problems/binary-search-tree-iterator/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/BSTIterator.java)|Medium|
 |24|[Submission Details](https://leetcode.com/problems/duplicate-emails/)|[Sql](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/DuplicateEmails.sql)|Easy|
+|25|[Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/PrefixTree.java)|Medium|
