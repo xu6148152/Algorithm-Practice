@@ -5,6 +5,7 @@ import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
+import com.binea.www.leetcodepractice.algorithm.MissingNumber;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
@@ -82,6 +83,12 @@ public class UnitTest {
         //String text = "the sky is blue";
         String text = "   a   b ";
         String result = ReverseWords.reverseWords14ms(text);
+        System.out.print(result);
+    }
+
+    @Test public void testMissingNumber() {
+        int[] a = { 0, 1, 3 };
+        int result = MissingNumber.missingNumber(a);
         System.out.print(result);
     }
 }
