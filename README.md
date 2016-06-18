@@ -33,3 +33,6 @@ My Althorithm Practice
 |25|[Submission Details](https://leetcode.com/problems/duplicate-emails/)|[Sql](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/DuplicateEmails.sql)|Easy|
 |26|[Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/PrefixTree.java)|Medium|
 |27|[Missing Number](https://leetcode.com/problems/missing-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MissingNumber.java)|Medium|
+|28|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/HappyNumber.java)|Medium|
+
+
