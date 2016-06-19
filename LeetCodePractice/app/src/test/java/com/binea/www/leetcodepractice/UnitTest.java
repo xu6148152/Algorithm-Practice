@@ -4,6 +4,7 @@ import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
+import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
@@ -90,5 +91,16 @@ public class UnitTest {
         int[] a = { 0, 1, 3 };
         int result = MissingNumber.missingNumber(a);
         System.out.print(result);
+    }
+
+    @Test public void testMinStack() {
+        MinStack minStack = new MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        System.out.println("minValue " + minStack.getMin());
+        minStack.pop();
+        System.out.println("topValue " + minStack.top());
+        System.out.println("minValue " + minStack.getMin());
     }
 }
