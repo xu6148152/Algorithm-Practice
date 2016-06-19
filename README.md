@@ -34,5 +34,4 @@ My Althorithm Practice
 |26|[Prefix Tree](https://leetcode.com/problems/implement-trie-prefix-tree/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/PrefixTree.java)|Medium|
 |27|[Missing Number](https://leetcode.com/problems/missing-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MissingNumber.java)|Medium|
 |28|[Happy Number](https://leetcode.com/problems/happy-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/HappyNumber.java)|Medium|
-
-
+|29|[Min Stack](https://leetcode.com/problems/min-stack/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MinStack.java)|Easy|
