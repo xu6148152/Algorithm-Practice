@@ -1,5 +1,6 @@
 package com.binea.www.leetcodepractice;
 
+import com.binea.www.leetcodepractice.algorithm.AddBinary;
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
@@ -102,5 +103,13 @@ public class UnitTest {
         minStack.pop();
         System.out.println("topValue " + minStack.top());
         System.out.println("minValue " + minStack.getMin());
+    }
+
+    @Test public void testAddBinary() {
+        String a =
+                "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
+                b = "1";
+        final String sum = AddBinary.addBinary3ms(a, b);
+        System.out.print(sum);
     }
 }
