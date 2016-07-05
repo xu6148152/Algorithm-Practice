@@ -46,3 +46,4 @@ My Althorithm Practice
 |38|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SymmetricTree.java)|Easy|
 |39|[N-Queens II](https://leetcode.com/problems/symmetric-tree/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/N_Queens_II.java)|Hard|
 |40|[Add Binary](https://leetcode.com/problems/add-binary/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/AddBinary.java)|Easy|
+|41|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/HammingWeight.java)|Easy|
