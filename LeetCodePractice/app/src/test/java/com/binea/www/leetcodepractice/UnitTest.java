@@ -4,6 +4,7 @@ import com.binea.www.leetcodepractice.algorithm.AddBinary;
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
+import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
@@ -111,5 +112,11 @@ public class UnitTest {
                 b = "1";
         final String sum = AddBinary.addBinary3ms(a, b);
         System.out.print(sum);
+    }
+
+    @Test public void testJumpGame() {
+        int[] A = { 2, 3, 1, 1, 4 };
+        final boolean canJump = JumpGame.canJump3ms(A);
+        System.out.print(canJump);
     }
 }
