@@ -49,3 +49,4 @@ My Althorithm Practice
 |41|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/HammingWeight.java)|Easy|
 |42|[Jump Game](https://leetcode.com/problems/jump-game/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/JumpGame.java)|Medium|
 |43|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/InsertionSortList.java)|Medium|
+|44|[Super Pow](https://leetcode.com/submissions/detail/66477122/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SuperPow.java)|Medium|
