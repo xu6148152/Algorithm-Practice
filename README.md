@@ -50,3 +50,4 @@ My Althorithm Practice
 |42|[Jump Game](https://leetcode.com/problems/jump-game/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/JumpGame.java)|Medium|
 |43|[Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/InsertionSortList.java)|Medium|
 |44|[Super Pow](https://leetcode.com/submissions/detail/66477122/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SuperPow.java)|Medium|
+|44|[Bineary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/BinaryTreePaths.java)|Easy|
