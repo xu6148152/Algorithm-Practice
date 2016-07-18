@@ -107,8 +107,7 @@ public class UnitTest {
     }
 
     @Test public void testAddBinary() {
-        String a =
-                "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
+        String a = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101",
                 b = "1";
         final String sum = AddBinary.addBinary3ms(a, b);
         System.out.print(sum);
@@ -118,5 +117,9 @@ public class UnitTest {
         int[] A = { 2, 3, 1, 1, 4 };
         final boolean canJump = JumpGame.canJump3ms(A);
         System.out.print(canJump);
+    }
+
+    @Test public void testWaterAndJug() {
+        int x = 2, y = 6, z = 5;
     }
 }
