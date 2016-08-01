@@ -29,7 +29,7 @@ public class PowerOfThree {
      * Follow up:
      * Could you do it without using any loop / recursion?
      */
-    public boolean isPowerOfThree(int n) {
+    public boolean isPowerOfThree18ms(int n) {
         return (n > 0 && 1162261467 % n == 0);
     }
 }
