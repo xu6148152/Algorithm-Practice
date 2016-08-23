@@ -74,3 +74,4 @@ My Althorithm Practice
 |66|[Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)|[java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/ShuffleAnArray.java)|Medium|  
 |67|[3Sum](https://leetcode.com/problems/3sum/)|[java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/ThreeSum.java)|Medium|  
 |68|[Word Ladder](https://leetcode.com/problems/word-ladder/)|[java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/WordLadder.java)|Medium| 
+|69|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)|[java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SlidingWindowMaximum.java)|Hard| 
