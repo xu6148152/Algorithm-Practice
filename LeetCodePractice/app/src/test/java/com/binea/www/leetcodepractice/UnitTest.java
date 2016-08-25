@@ -3,6 +3,7 @@ package com.binea.www.leetcodepractice;
 import com.binea.www.leetcodepractice.algorithm.AddBinary;
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
+import com.binea.www.leetcodepractice.algorithm.EvalRPN;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
@@ -121,5 +122,13 @@ public class UnitTest {
 
     @Test public void testWaterAndJug() {
         int x = 2, y = 6, z = 5;
+    }
+
+    @Test public void testEvalRPN() {
+        //String []strs = {"2", "1", "+", "3", "*"};
+        String[] strs = {"4", "13", "5", "/", "+"};
+        EvalRPN evalRPN = new EvalRPN();
+        int result = evalRPN.evalRPN(strs);
+        System.out.print(result);
     }
 }
