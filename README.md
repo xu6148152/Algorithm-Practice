@@ -84,3 +84,4 @@ My Althorithm Practice
 |76|[H-Index II](https://leetcode.com/problems/h-index-ii/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/H_Index_II.java)|Medium| 
 |77|[Decode Ways](https://leetcode.com/problems/decode-ways/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/NumDecodings.java)|Medium| 
 |78|[Four Sum](https://leetcode.com/problems/4sum/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/FourSum.java)|Medium| 
+|79|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/LengthOfLIS.java)|Medium| 
