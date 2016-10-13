@@ -27,7 +27,7 @@ public class CountPrimes {
     /**
      * Count the number of prime numbers less than a non-negative number, n.
      */
-    public int countPrimes(int n) {
+    public int countPrimes17ms(int n) {
         if (n <= 2) {
             return 0;
         }
@@ -55,5 +55,32 @@ public class CountPrimes {
             }
         }
         return c;
+    }
+
+    public int countPrimes15ms(int n) {
+        if (n <= 2) {
+            return 0;
+        }
+        boolean[] flag = new boolean[n];
+        int i = 3;
+        int count = 1;
+        while (i <= Math.sqrt(n)) {
+            if (!flag[i]) {
+                count++;
+                int j = i;
+                while (i * j < n) {
+                    flag[i * j] = true;
+                    j += 2;
+                }
+            }
+            i += 2;
+        }
+        while (i < n) {
+            if (!flag[i]) {
+                count++;
+            }
+            i += 2;
+        }
+        return count;
     }
 }
