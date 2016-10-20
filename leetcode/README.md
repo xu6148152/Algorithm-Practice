@@ -99,3 +99,4 @@ My Althorithm Practice
 |91|[Count-Primes](https://leetcode.com/problems/count-primes/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/CountPrimes.java)|Easy|
 |92|[Pow(x, n)](https://leetcode.com/problems/powx-n/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/Pow.java)|Medium|
 |93|[LargestNumber](https://leetcode.com/problems/largest-number/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/LargestNumber.java)|Medium|
+|93|[Ransom Note](https://leetcode.com/problems/ransom-note/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/RansomNote.java)|Easy|
