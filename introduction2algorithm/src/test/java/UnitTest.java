@@ -18,9 +18,9 @@ public class UnitTest {
     @Test
     public void testLongestSubsequence() {
         LongestSubsequence longestSubsequence = new LongestSubsequence();
-        int[] a = {1, 0, 0, 1, 0, 1, 0, 1};
+        int[] a = {1, 0, 0, 1, 0, 1, 0, 1, 1, 0};
         int[] b = {0, 1, 0, 1, 1, 0, 1, 1, 0};
         int[][] result = longestSubsequence.getLongestSubsequence(a, b);
-        longestSubsequence.display(result, a, a.length, b.length);
+        longestSubsequence.display(result, a, a.length -1 , b.length - 1);
     }
 }

@@ -14,7 +14,7 @@ public class LongestSubsequence {
         int[][] c = new int[m][n];
 
         for(int i = 1; i < m; i++) {
-            for(int j = 1; i <n; j++) {
+            for(int j = 1; j <n; j++) {
                 if(x[i] == y[j]) {
                     c[i][j] = c[i - 1][j - 1] + 1;
                     b[i][j] = 1;
