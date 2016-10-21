@@ -3,6 +3,9 @@ import com.example.dp.LongestSubsequence;
 
 import org.junit.Test;
 
+import java.util.Iterator;
+import java.util.TreeSet;
+
 
 /**
  * Created by binea on 2016/10/19.
@@ -22,5 +25,19 @@ public class UnitTest {
         int[] b = {0, 1, 0, 1, 1, 0, 1, 1, 0};
         int[][] result = longestSubsequence.getLongestSubsequence(a, b);
         longestSubsequence.display(result, a, a.length -1 , b.length - 1);
+    }
+
+    @Test
+    public void testLongestAscendSubsequence() {
+        int[] a= {2, 1, 4, 3, 1, 2, 1, 5, 3};
+        LongestSubsequence longestSubsequence = new LongestSubsequence();
+        TreeSet<Integer> treeSet = longestSubsequence.longestAscendSubsequence(a);
+        if(treeSet == null) {
+            return;
+        }
+
+        for(Integer num : treeSet) {
+            System.out.printf("%d ", num);
+        }
     }
 }

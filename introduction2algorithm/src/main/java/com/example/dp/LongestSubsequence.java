@@ -1,5 +1,7 @@
 package com.example.dp;
 
+import java.util.TreeSet;
+
 /**
  * Created by binea on 2016/10/20.
  */
@@ -44,5 +46,15 @@ public class LongestSubsequence {
         }else {
             display(b, x, i, j - 1);
         }
+    }
+
+    public TreeSet<Integer> longestAscendSubsequence(int[] nums) {
+        TreeSet<Integer> set = new TreeSet<>();
+        for(int i : nums) {
+            Integer ceiling = set.ceiling(i);
+            if(ceiling != null) set.remove(ceiling);
+            set.add(i);
+        }
+        return set;
     }
 }
