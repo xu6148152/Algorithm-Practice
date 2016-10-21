@@ -10,6 +10,7 @@ import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
+import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
@@ -130,5 +131,10 @@ public class UnitTest {
         EvalRPN evalRPN = new EvalRPN();
         int result = evalRPN.evalRPN(strs);
         System.out.print(result);
+    }
+
+    @Test public void testPascalTriangle() {
+        PascalTriangle pascalTriangle = new PascalTriangle();
+        pascalTriangle.generate(5);
     }
 }

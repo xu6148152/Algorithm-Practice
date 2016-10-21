@@ -10,7 +10,7 @@ public class LongestSubsequence {
         int m = x.length;
         int n = y.length;
 
-        int[][] b = new int[m][m];
+        int[][] b = new int[m][n];
         int[][] c = new int[m][n];
 
         for(int i = 1; i < m; i++) {
