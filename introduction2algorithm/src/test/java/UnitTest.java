@@ -1,4 +1,5 @@
 import com.example.dp.Fab;
+import com.example.dp.LongestPalindromeSubSequence;
 import com.example.dp.LongestSubsequence;
 
 import org.junit.Test;
@@ -39,5 +40,13 @@ public class UnitTest {
         for(Integer num : treeSet) {
             System.out.printf("%d ", num);
         }
+    }
+
+
+    @Test
+    public void testLongestPalindromeSubSequence() {
+        LongestPalindromeSubSequence longestPalindromeSubSequence = new LongestPalindromeSubSequence();
+        String result = longestPalindromeSubSequence.longestPalindrome("character");
+        System.out.print(result);
     }
 }
