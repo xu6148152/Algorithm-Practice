@@ -1,6 +1,7 @@
 import com.example.dp.Fab;
 import com.example.dp.LongestPalindromeSubSequence;
 import com.example.dp.LongestSubsequence;
+import com.example.dp.Package01Answer;
 
 import org.junit.Test;
 
@@ -48,5 +49,16 @@ public class UnitTest {
         LongestPalindromeSubSequence longestPalindromeSubSequence = new LongestPalindromeSubSequence();
         String result = longestPalindromeSubSequence.longestPalindrome("character");
         System.out.print(result);
+    }
+
+    @Test
+    public void testPackageAnswer() {
+        Package01Answer package01Answer = new Package01Answer();
+        int[] values = {60, 100, 120};
+        int[] result = package01Answer.getPackageAnswer(new int[]{60, 100, 120}, new int[]{10, 20, 30}, 50);
+
+        for(int i : result) {
+            System.out.print(i + " ");
+        }
     }
 }
