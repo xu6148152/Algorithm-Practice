@@ -5,7 +5,6 @@ import com.example.dp.Package01Answer;
 
 import org.junit.Test;
 
-import java.util.Iterator;
 import java.util.TreeSet;
 
 
@@ -60,5 +59,20 @@ public class UnitTest {
         for(int i : result) {
             System.out.print(i + " ");
         }
+    }
+
+    @Test
+    public void testEncodeString() {
+//        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree().HuffmanAlgorithmImpl();
+//        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
+//        System.out.println(result.getEncode());
+    }
+
+    @Test
+    public void testDecode() {
+//        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree.HuffmanAlgorithmImpl();
+//        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
+//        String decode = huffmanImpl1.decode(result);
+//        System.out.println(decode);
     }
 }
