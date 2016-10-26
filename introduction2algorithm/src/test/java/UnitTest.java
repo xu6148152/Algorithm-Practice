@@ -2,6 +2,7 @@ import com.example.dp.Fab;
 import com.example.dp.LongestPalindromeSubSequence;
 import com.example.dp.LongestSubsequence;
 import com.example.dp.Package01Answer;
+import com.example.greed.HuffmanTree;
 
 import org.junit.Test;
 
@@ -63,16 +64,16 @@ public class UnitTest {
 
     @Test
     public void testEncodeString() {
-//        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree().HuffmanAlgorithmImpl();
-//        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
-//        System.out.println(result.getEncode());
+        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree().new HuffmanAlgorithmImpl();
+        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
+        System.out.println(result.getEncode());
     }
 
     @Test
     public void testDecode() {
-//        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree.HuffmanAlgorithmImpl();
-//        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
-//        String decode = huffmanImpl1.decode(result);
-//        System.out.println(decode);
+        HuffmanTree.HuffmanAlgorithmImpl huffmanImpl1 = new HuffmanTree().new HuffmanAlgorithmImpl();
+        HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
+        String decode = huffmanImpl1.decode(result);
+        System.out.println(decode);
     }
 }
