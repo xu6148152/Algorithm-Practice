@@ -1,6 +1,7 @@
 import com.example.dp.Fab;
 import com.example.dp.LongestPalindromeSubSequence;
 import com.example.dp.LongestSubsequence;
+import com.example.dp.MaxSubArraySum;
 import com.example.dp.Package01Answer;
 import com.example.greed.HuffmanTree;
 
@@ -75,5 +76,13 @@ public class UnitTest {
         HuffmanTree.EncodeResult result = huffmanImpl1.encode("abcdda");
         String decode = huffmanImpl1.decode(result);
         System.out.println(decode);
+    }
+
+    @Test
+    public void testMaxSubArraySum() {
+        int[] array = {-1, 2, -3, -2, 5, -1};
+        MaxSubArraySum maxSubArraySum = new MaxSubArraySum();
+        int result = maxSubArraySum.getMaxSubArraySum(array);
+        System.out.print(result);
     }
 }
