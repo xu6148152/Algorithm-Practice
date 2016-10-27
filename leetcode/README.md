@@ -103,3 +103,6 @@ My Althorithm Practice
 |94|[Pascal-Triangle](https://leetcode.com/problems/pascals-triangle/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/PascalTriangle.java)|Easy|
 |95|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/RepeatedDNASequences.java)|Easy|
 |96|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SpiralMatrix.java)|Medium|
+|97|[Lexicographical Numbers](https://leetcode.com/problems/spiral-matrix/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/LexicographicalNumbers.java)|Medium|
+
+LexicographicalNumbers

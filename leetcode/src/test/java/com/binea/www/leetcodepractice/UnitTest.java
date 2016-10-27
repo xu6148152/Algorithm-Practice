@@ -6,6 +6,7 @@ import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.EvalRPN;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
+import com.binea.www.leetcodepractice.algorithm.LexicographicalNumbers;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
@@ -127,7 +128,7 @@ public class UnitTest {
 
     @Test public void testEvalRPN() {
         //String []strs = {"2", "1", "+", "3", "*"};
-        String[] strs = {"4", "13", "5", "/", "+"};
+        String[] strs = { "4", "13", "5", "/", "+" };
         EvalRPN evalRPN = new EvalRPN();
         int result = evalRPN.evalRPN(strs);
         System.out.print(result);
@@ -136,5 +137,13 @@ public class UnitTest {
     @Test public void testPascalTriangle() {
         PascalTriangle pascalTriangle = new PascalTriangle();
         pascalTriangle.generate(5);
+    }
+
+    @Test public void testLexicographicalNumbers() {
+        LexicographicalNumbers lexicographicalNumbers = new LexicographicalNumbers();
+        List<Integer> result = lexicographicalNumbers.lexicalOrder(13);
+        for (Integer i : result) {
+            System.out.printf("%d ", i);
+        }
     }
 }
