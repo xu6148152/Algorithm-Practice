@@ -104,5 +104,4 @@ My Althorithm Practice
 |95|[Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/RepeatedDNASequences.java)|Easy|
 |96|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/SpiralMatrix.java)|Medium|
 |97|[Lexicographical Numbers](https://leetcode.com/problems/spiral-matrix/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/LexicographicalNumbers.java)|Medium|
-
-LexicographicalNumbers
+|98|[Trips and Users](https://leetcode.com/problems/trips-and-users/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/TripsandUsers.sql)|Hard|
