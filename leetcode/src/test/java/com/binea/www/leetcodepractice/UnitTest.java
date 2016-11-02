@@ -14,6 +14,7 @@ import com.binea.www.leetcodepractice.algorithm.MissingNumber;
 import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
+import com.binea.www.leetcodepractice.algorithm.SearchInsertPosition;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
@@ -145,5 +146,12 @@ public class UnitTest {
         for (Integer i : result) {
             System.out.printf("%d ", i);
         }
+    }
+
+    @Test public void testSearchInsertPosition() {
+        SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
+        int[] nums = {1, 3, 5, 6};
+        int pos = searchInsertPosition.searchInsert(nums, 0);
+        System.out.print(pos);
     }
 }
