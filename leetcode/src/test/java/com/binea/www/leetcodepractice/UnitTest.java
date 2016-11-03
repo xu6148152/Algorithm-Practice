@@ -6,6 +6,7 @@ import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.EvalRPN;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
+import com.binea.www.leetcodepractice.algorithm.KSmallestPairs;
 import com.binea.www.leetcodepractice.algorithm.LexicographicalNumbers;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
@@ -153,5 +154,13 @@ public class UnitTest {
         int[] nums = {1, 3, 5, 6};
         int pos = searchInsertPosition.searchInsert(nums, 0);
         System.out.print(pos);
+    }
+
+    @Test public void testKSmallestPairs() {
+        int[] nums1 = {1, 7, 11};
+        int[] nums2 = {2, 4, 6};
+        int k = 3;
+        KSmallestPairs kSmallestPairs = new KSmallestPairs();
+        final List<int[]> result = kSmallestPairs.kSmallestPairs(nums1, nums2, 3);
     }
 }
