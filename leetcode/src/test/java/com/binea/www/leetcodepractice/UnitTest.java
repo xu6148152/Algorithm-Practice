@@ -16,6 +16,7 @@ import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.SearchInsertPosition;
+import com.binea.www.leetcodepractice.algorithm.SingleNumberII;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
@@ -162,5 +163,12 @@ public class UnitTest {
         int k = 3;
         KSmallestPairs kSmallestPairs = new KSmallestPairs();
         final List<int[]> result = kSmallestPairs.kSmallestPairs(nums1, nums2, 3);
+    }
+
+    @Test public void testSingleNumbersII() {
+        int[] nums = {1, 2, 1 ,1};
+        SingleNumberII singleNumberII = new SingleNumberII();
+        int result = singleNumberII.singleNumber(nums);
+        System.out.print(result);
     }
 }
