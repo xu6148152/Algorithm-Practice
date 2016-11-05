@@ -27,7 +27,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class StringSubject {
+    /**
+     * own
+     */
     public boolean isAllCharacterDifferent(String source, boolean usingDataStruct) {
+        if (source == null) {
+            return true;
+        }
         final char[] chars = source.toCharArray();
         if (usingDataStruct) {
             Set<Character> characterSet = new HashSet<>();
@@ -48,6 +54,58 @@ public class StringSubject {
                 return false;
             }
         }
+        return true;
+    }
+
+    public boolean isUniqueChars(String source) {
+        if (source == null || source.length() > 256) {
+            return false;
+        }
+
+        int checker = 0;
+        final char[] chars = source.toCharArray();
+        for (Character character : chars) {
+            if ((checker & (1 << character)) > 0) {
+                return false;
+            }
+            checker |= (1 << character);
+        }
+        return true;
+    }
+
+    public String reverseString(String source) {
+        if (source == null) {
+            return null;
+        }
+
+        final char[] chars = source.toCharArray();
+        for (int i = 0, j = chars.length - 1; i < chars.length / 2; i++, j--) {
+            char tmp = chars[i];
+            chars[i] = chars[j];
+            chars[j] = tmp;
+        }
+        return String.valueOf(chars);
+    }
+
+    public boolean pretumation(String t, String s) {
+        if (t == null || s == null || t.length() != s.length()) {
+            return false;
+        }
+
+        int[] letters = new int[256];
+
+        final char[] tChars = t.toCharArray();
+        for (Character character : tChars) {
+            letters[character]++;
+        }
+
+        final char[] sChars = s.toCharArray();
+        for (Character character : sChars) {
+            if (--letters[character] < 0) {
+                return false;
+            }
+        }
+
         return true;
     }
 }
