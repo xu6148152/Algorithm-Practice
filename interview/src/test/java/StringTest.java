@@ -55,4 +55,10 @@ public class StringTest {
         String result = stringSubject.replaceSpaces(source.toCharArray(), 13);
         assert result.trim().equals(source.trim().replaceAll("\\s", "%20"));
     }
+
+    @Test public void testCompressStrings() {
+        String source = "abc";
+        String result = stringSubject.compressString(source);
+        System.out.println(result);
+    }
 }

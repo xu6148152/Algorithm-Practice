@@ -110,6 +110,9 @@ public class StringSubject {
     }
 
     public String replaceSpaces(char[] source, int length) {
+        if (source == null || source.length < length) {
+            return null;
+        }
         int spaces = 0;
         for (int i = length - 1; i >= 0; i--) {
             if (source[i] == ' ') {
@@ -135,5 +138,51 @@ public class StringSubject {
             source[i] = ' ';
         }
         return String.valueOf(source);
+    }
+
+    public String compressString(String source) {
+        if (source == null) {
+            return null;
+        }
+
+        if (getCompressCount(source) >= source.length()) {
+            return source;
+        }
+
+        final char[] chars = source.toCharArray();
+        int nums = 1;
+        Character letter = null;
+        StringBuilder sb = new StringBuilder();
+        for (Character character : chars) {
+            if (character.equals(letter)) {
+                nums++;
+            } else {
+                if (letter != null) {
+                    sb.append(letter);
+                    sb.append(nums);
+                }
+                letter = character;
+                nums = 1;
+            }
+        }
+        sb.append(letter);
+        sb.append(nums > 1 ? nums : "");
+
+        return sb.toString();
+    }
+
+    private int getCompressCount(String source) {
+        final char[] chars = source.toCharArray();
+        char letter = ' ';
+        int size = 0;
+        for (Character character : chars) {
+            if (character.equals(letter)) {
+            } else {
+                size += 2;
+                letter = character;
+            }
+        }
+        size += 2;
+        return size;
     }
 }
