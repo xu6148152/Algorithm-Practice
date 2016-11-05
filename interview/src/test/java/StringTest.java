@@ -49,4 +49,10 @@ public class StringTest {
         String string2 = "cda";
         assert stringSubject.pretumation(string1, string2);
     }
+
+    @Test public void testReplaceAllSpaces() {
+        String source = "Mr John Smith                           ";
+        String result = stringSubject.replaceSpaces(source.toCharArray(), 13);
+        assert result.trim().equals(source.trim().replaceAll("\\s", "%20"));
+    }
 }

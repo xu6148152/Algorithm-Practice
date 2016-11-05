@@ -108,4 +108,32 @@ public class StringSubject {
 
         return true;
     }
+
+    public String replaceSpaces(char[] source, int length) {
+        int spaces = 0;
+        for (int i = length - 1; i >= 0; i--) {
+            if (source[i] == ' ') {
+                spaces++;
+            }
+        }
+
+        int newLength = length + spaces * 3;
+
+        source[newLength] = '\0';
+        for (int i = length - 1; i >= 0; i--) {
+            if (source[i] == ' ') {
+                source[newLength - 1] = '0';
+                source[newLength - 2] = '2';
+                source[newLength - 3] = '%';
+                newLength -= 3;
+            } else {
+                source[newLength - 1] = source[i];
+                newLength--;
+            }
+        }
+        for (int i = 0; i < newLength; i++) {
+            source[i] = ' ';
+        }
+        return String.valueOf(source);
+    }
 }
