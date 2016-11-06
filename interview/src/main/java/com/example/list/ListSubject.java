@@ -63,4 +63,17 @@ public class ListSubject {
             current = current.next;
         }
     }
+
+    public boolean deleteNode(Node node) {
+        if (node == null || node.next == null) {
+            return false;
+        }
+
+        Node next = node.next;
+        node.data = next.data;
+        node.next = next.next;
+        return true;
+    }
+
+
 }
