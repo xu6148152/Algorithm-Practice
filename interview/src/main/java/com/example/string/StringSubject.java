@@ -187,6 +187,10 @@ public class StringSubject {
     }
 
     public void rotate(int[][] matrix, int n) {
+        if (matrix == null || matrix.length == 0) {
+            return;
+        }
+
         for (int layer = 0; layer < n / 2; layer++) {
             int first = layer;
             int last = n - 1 - layer;
@@ -207,6 +211,94 @@ public class StringSubject {
 
                 //top to right
                 matrix[i][last] = top;
+            }
+        }
+    }
+
+    public void setZeros(int[][] matrix) {
+        if (matrix == null || matrix.length == 0) {
+            return;
+        }
+        boolean[] row = new boolean[matrix.length];
+        boolean[] col = new boolean[matrix[0].length];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == 0) {
+                    row[i] = true;
+                    col[i] = true;
+                }
+            }
+        }
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (row[i] || col[i]) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
+
+    public boolean isRotation(String s1, String s2) {
+        if (s1 == null || s2 == null) {
+            return false;
+        }
+
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
+        String s1s2 = s1 + s1;
+        return isSubstring(s1s2, s2);
+    }
+
+    private boolean isSubstring(String s1, String s2) {
+        return false;
+    }
+
+    private void preKmp(char[] x, int m, int kmpNext[]) {
+        int i, j;
+        i = 0;
+        j = kmpNext[0] = -1;
+        while (i < m) {
+            while (j > -1 && x[i] != x[j]) {
+                j = kmpNext[j];
+            }
+            i++;
+            j++;
+            if (x[i] == x[j]) {
+                kmpNext[i] = kmpNext[j];
+            } else {
+                kmpNext[i] = j;
+            }
+        }
+    }
+
+    /**
+     *
+     * @param x pattern
+     * @param m
+     * @param y source
+     * @param n
+     */
+    private void KMP(char[] x, int m, char[] y, int n) {
+        int i, j;
+        int[] kmpNext = new int[x.length];
+
+        //preprocessing
+        preKmp(x, m, kmpNext);
+
+        //searching
+        i = j = 0;
+        while (j < n) {
+            while (i > -1 && x[i] != y[i]) {
+                i = kmpNext[j];
+            }
+            i++;
+            j++;
+            if (i >= m) {
+                i = kmpNext[i];
             }
         }
     }
