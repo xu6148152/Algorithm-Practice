@@ -21,6 +21,7 @@
 //         .............................................  
 //                  佛祖镇楼                  BUG辟易 
 
+import com.example.string.KMPHelper;
 import com.example.string.StringSubject;
 import org.junit.Test;
 
@@ -60,5 +61,12 @@ public class StringTest {
         String source = "abc";
         String result = stringSubject.compressString(source);
         System.out.println(result);
+    }
+
+    @Test public void testKmp() {
+        KMPHelper kmp = new KMPHelper();
+        String str = "abababdafdasabcfdfeaba";
+        String pattern = "abc";
+        System.out.println(kmp.kmp(str, pattern));
     }
 }
