@@ -17,6 +17,7 @@ import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.SearchInsertPosition;
 import com.binea.www.leetcodepractice.algorithm.SingleNumberII;
+import com.binea.www.leetcodepractice.algorithm.SortColors;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
@@ -170,5 +171,11 @@ public class UnitTest {
         SingleNumberII singleNumberII = new SingleNumberII();
         int result = singleNumberII.singleNumber(nums);
         System.out.print(result);
+    }
+
+    @Test public void testSortColors() {
+        SortColors sortColors = new SortColors();
+        int[] nums = {1,0,2,1,2,0,1,0,1,2};
+        sortColors.sortColors(nums);
     }
 }
