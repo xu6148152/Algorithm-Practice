@@ -1,4 +1,4 @@
-import com.example.stack_queue.Stack;
+import com.example.stack_queue.StackWithNode;
 
 import org.junit.Test;
 
@@ -9,16 +9,16 @@ import org.junit.Test;
 public class Stack_QueueTest {
     @Test
     public void testStack1() {
-        Stack stack = new Stack();
-        stack.push(new Stack(). new Node(1));
-        stack.push(new Stack(). new Node(2));
-        stack.push(new Stack(). new Node(3));
+        StackWithNode stackWithNode = new StackWithNode();
+        stackWithNode.push(new StackWithNode(). new Node(1));
+        stackWithNode.push(new StackWithNode(). new Node(2));
+        stackWithNode.push(new StackWithNode(). new Node(3));
 
 
-//        System.out.println(stack.min().val);
-        System.out.println(stack.pop().val);
-        System.out.println(stack.pop().val);
-        System.out.println(stack.pop().val);
+//        System.out.println(stackWithNode.min().val);
+        System.out.println(stackWithNode.pop().val);
+        System.out.println(stackWithNode.pop().val);
+        System.out.println(stackWithNode.pop().val);
     }
 
 }

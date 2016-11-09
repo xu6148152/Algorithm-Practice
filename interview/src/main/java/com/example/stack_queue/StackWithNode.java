@@ -4,7 +4,7 @@ package com.example.stack_queue;
  * Created by binea on 2016/11/8.
  */
 
-public class Stack {
+public class StackWithNode {
     public class Node {
         public int val;
         public Node next;
