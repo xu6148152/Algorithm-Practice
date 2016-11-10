@@ -62,7 +62,7 @@ public class AnimalQueue {
         }
         return dequeueCat();
     }
-    
+
     public Animal dequeueDog() {
         return dogQueue.poll();
     }
