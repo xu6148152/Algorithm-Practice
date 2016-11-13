@@ -135,4 +135,20 @@ public class Bits {
 
         return n - (1 << c1) - (1 << (c0 - 1)) + 1;
     }
+
+    public int bitSwapRequired1(int a, int b) {
+        int count = 0;
+        for (int c = a ^ b; c != 0; c >>= 1) {
+            count++;
+        }
+        return count;
+    }
+
+    public int bitSwapRequired2(int a, int b) {
+        int count = 0;
+        for (int c = a ^ b; c != 0; c &= (c - 1)) {
+            count++;
+        }
+        return count;
+    }
 }
