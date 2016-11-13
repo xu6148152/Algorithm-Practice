@@ -1,5 +1,7 @@
 package com.example.bits;
 
+import java.util.ArrayList;
+
 /**
  * Created by binea on 2016/11/12.
  */
@@ -150,5 +152,91 @@ public class Bits {
             count++;
         }
         return count;
+    }
+
+    public int swapOddEvenBits(int x) {
+        return (((x & 0xaaaaaaaa) >> 1) | ((x & 0x55555555) << 1));
+    }
+
+    public int findMissing(ArrayList<BitInteger> array) {
+        return findMissing(array, 0);
+    }
+
+    public int findMissing(ArrayList<BitInteger> input, int column) {
+        if (column >= BitInteger.INTEGER_SIZE) {
+            return 0;
+        }
+
+        ArrayList<BitInteger> oneBits = new ArrayList<>(input.size() / 2);
+        ArrayList<BitInteger> zeroBits = new ArrayList<>(input.size() / 2);
+
+        for (BitInteger bitInteger : input) {
+            if (bitInteger.fetch(column) == 0) {
+                zeroBits.add(bitInteger);
+            } else {
+                oneBits.add(bitInteger);
+            }
+        }
+
+        if (zeroBits.size() <= oneBits.size()) {
+            int v = findMissing(zeroBits, column + 1);
+            return (v << 1);
+        } else {
+            int v = findMissing(oneBits, column + 1);
+            return (v << 1) | 1;
+        }
+    }
+
+    class BitInteger {
+        public int val;
+        public int integerSize;
+        public static final int INTEGER_SIZE = 32;
+
+        public int fetch(int column) {
+            return (val & (1 << column)) >> column;
+        }
+
+        public BitInteger(int val) {
+            this.val = val;
+            for (int i = val; i >= 0; i &= i - 1) {
+                this.integerSize++;
+            }
+        }
+    }
+
+    public void drawLine(byte[] screen, int width, int x1, int x2, int y) {
+        int startOffset = x1 % 8;
+        int firstFullByte = x1 / 8;
+        if (startOffset != 0) {
+            firstFullByte++;
+        }
+
+        int endOffset = x2 & 8;
+        int lastFullByte = x2 / 8;
+        if (endOffset != 7) {
+            lastFullByte--;
+        }
+
+        for (int b = firstFullByte; b <= lastFullByte; b++) {
+            screen[(width / 8) * y + b] = (byte) 0xFF;
+        }
+
+        byte startMask = (byte) (0xFF >> startOffset);
+        byte endMask = (byte) ~(0xFF >> (endOffset + 1));
+
+        if ((x1 / 8) == (x2 / 8)) {
+            byte mask = (byte) (startMask & endMask);
+            screen[(width / 8) * y + (x1 / 8)] |= mask;
+        } else {
+            if (startOffset != 0) {
+                int byteNumber = (width / 8) * y + firstFullByte - 1;
+                screen[byteNumber] |= startMask;
+            }
+
+            if (endOffset != 7) {
+                int byteNumber = (width / 8) * y + lastFullByte + 1;
+                screen[byteNumber] |= endMask;
+            }
+        }
     }
 }
