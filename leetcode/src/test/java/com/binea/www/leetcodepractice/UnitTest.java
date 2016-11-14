@@ -12,6 +12,7 @@ import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
+import com.binea.www.leetcodepractice.algorithm.MoveZeros;
 import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
@@ -177,5 +178,14 @@ public class UnitTest {
         SortColors sortColors = new SortColors();
         int[] nums = {1,0,2,1,2,0,1,0,1,2};
         sortColors.sortColors(nums);
+    }
+
+    @Test public void testMoveZeros() {
+        MoveZeros moveZeros = new MoveZeros();
+        int[] nums = {0, 1, 0, 3, 12};
+        moveZeros.moveZeros(nums);
+        for(int i : nums) {
+            System.out.print(i + ", ");
+        }
     }
 }
