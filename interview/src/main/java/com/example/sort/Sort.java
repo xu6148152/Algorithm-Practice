@@ -9,8 +9,6 @@ public class Sort {
     /**
      * stable
      * bubble sort
-     *
-     * @param array
      */
     public void bubbleSort(long[] array) {
         if (array == null) {
@@ -28,8 +26,6 @@ public class Sort {
 
     /**
      * not stable
-     *
-     * @param array
      */
     public void selectSort(long[] array) {
         assert array != null;
@@ -69,7 +65,6 @@ public class Sort {
 
         quickSort(array, start, part - 1);
         quickSort(array, part + 1, end);
-
     }
 
     public int partial(long[] array, int start, int end) {
@@ -84,8 +79,12 @@ public class Sort {
         long key = array[start];
         int lo = start, hi = end;
         while (lo < hi) {
-            while (array[lo++] < key && lo <= hi) ;
-            while (array[hi--] > key && lo <= hi) ;
+            while (array[lo++] < key && lo <= hi) {
+                ;
+            }
+            while (array[hi--] > key && lo <= hi) {
+                ;
+            }
             swap1(array, lo, hi);
         }
         array[hi] = key;
@@ -124,6 +123,50 @@ public class Sort {
 
         for (int m = 0; m < tmp.length; m++) {
             array[m + start] = tmp[m];
+        }
+    }
+
+    public void heapSort(long[] array) {
+        if (array == null || array.length <= 1) {
+            return;
+        }
+
+        buildMaxHeap(array);
+
+        for (int i = array.length - 1; i >= 1; i--) {
+            swap1(array, 0, i);
+            maxHeap(array, i, 0);
+        }
+    }
+
+    private void maxHeap(long[] array, int heapSize, int index) {
+        int left = index * 2 + 1;
+        int right = index * 2 + 2;
+
+        int largest = index;
+
+        if (left < heapSize && array[left] > array[index]) {
+            largest = left;
+        }
+
+        if (right < heapSize && array[right] > array[largest]) {
+            largest = right;
+        }
+
+        if (index != largest) {
+            swap1(array, index, largest);
+            maxHeap(array, heapSize, largest);
+        }
+    }
+
+    private void buildMaxHeap(long[] array) {
+        if (array == null || array.length <= 1) {
+            return;
+        }
+
+        int half = array.length / 2;
+        for (int i = half; i >= 0; i--) {
+            maxHeap(array, array.length, i);
         }
     }
 
