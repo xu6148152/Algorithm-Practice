@@ -4,10 +4,8 @@ import com.example.dp.LongestSubsequence;
 import com.example.dp.MaxSubArraySum;
 import com.example.dp.Package01Answer;
 import com.example.greed.HuffmanTree;
-
-import org.junit.Test;
-
 import java.util.TreeSet;
+import org.junit.Test;
 
 
 /**
@@ -84,5 +82,9 @@ public class UnitTest {
         MaxSubArraySum maxSubArraySum = new MaxSubArraySum();
         int result = maxSubArraySum.getMaxSubArraySum(array);
         System.out.print(result);
+    }
+
+    @Test
+    public void testRingBuffer() {
     }
 }
