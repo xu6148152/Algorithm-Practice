@@ -14,6 +14,7 @@ import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
 import com.binea.www.leetcodepractice.algorithm.MoveZeros;
 import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
+import com.binea.www.leetcodepractice.algorithm.RepeatedSubstringPattern;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.SearchInsertPosition;
@@ -187,5 +188,11 @@ public class UnitTest {
         for(int i : nums) {
             System.out.print(i + ", ");
         }
+    }
+
+    @Test public void testRepeatedSubstringPattern() {
+        String input = "a";
+        RepeatedSubstringPattern repeatedSubstringPattern = new RepeatedSubstringPattern();
+        repeatedSubstringPattern.repeatedSubstringPattern(input);
     }
 }
