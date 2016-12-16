@@ -68,7 +68,7 @@ public class WordSearch {
         if (board[x][y] != words[idx]) {
             return false;
         }
-        board[x][y] ^= 256;
+        board[x][y] ^= 256;//guard like #, this value will be greater than char value.
         boolean exist = dfs(board, words, idx + 1, x, y + 1) ||
                 dfs(board, words, idx + 1, x, y - 1) || dfs(board, words, idx + 1, x + 1, y) ||
                 dfs(board, words, idx + 1, x - 1, y);

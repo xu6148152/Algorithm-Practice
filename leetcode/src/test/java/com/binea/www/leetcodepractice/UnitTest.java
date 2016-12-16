@@ -22,6 +22,7 @@ import com.binea.www.leetcodepractice.algorithm.SingleNumberII;
 import com.binea.www.leetcodepractice.algorithm.SortColors;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
+import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import java.util.List;
 import org.junit.Test;
@@ -155,21 +156,21 @@ public class UnitTest {
 
     @Test public void testSearchInsertPosition() {
         SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
-        int[] nums = {1, 3, 5, 6};
+        int[] nums = { 1, 3, 5, 6 };
         int pos = searchInsertPosition.searchInsert(nums, 0);
         System.out.print(pos);
     }
 
     @Test public void testKSmallestPairs() {
-        int[] nums1 = {1, 7, 11};
-        int[] nums2 = {2, 4, 6};
+        int[] nums1 = { 1, 7, 11 };
+        int[] nums2 = { 2, 4, 6 };
         int k = 3;
         KSmallestPairs kSmallestPairs = new KSmallestPairs();
         final List<int[]> result = kSmallestPairs.kSmallestPairs(nums1, nums2, 3);
     }
 
     @Test public void testSingleNumbersII() {
-        int[] nums = {1, 2, 1 ,1};
+        int[] nums = { 1, 2, 1, 1 };
         SingleNumberII singleNumberII = new SingleNumberII();
         int result = singleNumberII.singleNumber(nums);
         System.out.print(result);
@@ -177,15 +178,15 @@ public class UnitTest {
 
     @Test public void testSortColors() {
         SortColors sortColors = new SortColors();
-        int[] nums = {1,0,2,1,2,0,1,0,1,2};
+        int[] nums = { 1, 0, 2, 1, 2, 0, 1, 0, 1, 2 };
         sortColors.sortColors(nums);
     }
 
     @Test public void testMoveZeros() {
         MoveZeros moveZeros = new MoveZeros();
-        int[] nums = {0, 1, 0, 3, 12};
+        int[] nums = { 0, 1, 0, 3, 12 };
         moveZeros.moveZeros(nums);
-        for(int i : nums) {
+        for (int i : nums) {
             System.out.print(i + ", ");
         }
     }
@@ -194,5 +195,14 @@ public class UnitTest {
         String input = "a";
         RepeatedSubstringPattern repeatedSubstringPattern = new RepeatedSubstringPattern();
         repeatedSubstringPattern.repeatedSubstringPattern(input);
+    }
+
+    @Test public void testWordSearch() {
+        char[][] board = {
+                { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' }
+        };
+        String s = "ABCCED";
+        WordSearch wordSearch = new WordSearch();
+        wordSearch.exist11ms(board, s);
     }
 }
