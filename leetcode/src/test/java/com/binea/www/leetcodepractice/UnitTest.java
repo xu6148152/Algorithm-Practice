@@ -9,6 +9,7 @@ import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.KSmallestPairs;
 import com.binea.www.leetcodepractice.algorithm.LexicographicalNumbers;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
+import com.binea.www.leetcodepractice.algorithm.MaximumProductofWordLengths;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
@@ -25,6 +26,7 @@ import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import java.util.List;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -204,5 +206,13 @@ public class UnitTest {
         String s = "ABCCED";
         WordSearch wordSearch = new WordSearch();
         wordSearch.exist11ms(board, s);
+    }
+
+    @Test public void testMaxProductOfWordLengths() {
+        String[] strs = new String[] {
+                "abcw", "baz", "foo", "bar", "xtfn", "abcdef"
+        };
+
+        Assert.assertEquals(16, MaximumProductofWordLengths.maxProduct(strs));
     }
 }
