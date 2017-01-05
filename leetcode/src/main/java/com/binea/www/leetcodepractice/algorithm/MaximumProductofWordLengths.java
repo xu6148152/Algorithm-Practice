@@ -70,4 +70,28 @@ public class MaximumProductofWordLengths {
         }
         return maxProduct;
     }
+
+    public static int maxProduct24ms(String[] words) {
+        int len = words.length;
+        int[] mark = new int[len];
+        int[] leng = new int[len];
+        for (int i = 0; i < len; i++) {
+            int k = words[i].length();
+            leng[i] = k;
+            for (int j = 0; j < k; j++) {
+                int p = (int) (words[i].charAt(j) - 'a');
+                p = 1 << p;
+                mark[i] = mark[i] | p;
+            }
+        }
+        int ans = 0;
+        for (int i = 0; i < len; i++)
+            for (int j = i + 1; j < len; j++)
+                if ((mark[i] & mark[j]) == 0) {
+                    if (ans < leng[i] * leng[j]) {
+                        ans = leng[i] * leng[j];
+                    }
+                }
+        return ans;
+    }
 }
