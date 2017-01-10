@@ -42,7 +42,7 @@ public class LongestPalindromicSubstring {
      *
      * Output: "bb"
      */
-    public String longestPalindrome(String s) {
+    public String longestPalindrome15ms(String s) {
         int len = s.length();
         if (len > 1000) {
             return null;
@@ -67,5 +67,44 @@ public class LongestPalindromicSubstring {
             lo = j + 1;
             maxLen = k - j - 1;
         }
+    }
+
+    public String longestPalindrome14ms(String s) {
+        if (s == null) {
+            return null;
+        }
+        int len = s.length();
+        if (len <= 2) {
+            return s;
+        }
+
+        char[] chars = s.toCharArray();
+        int rs = 0, re = 0;
+        int max = 0;
+        for (int i = 0; i < len; i++) {
+            if (isPalindrome(chars, i - max - 1, i)) {
+                rs = i - max - 1;
+                re = i;
+                max += 2;
+            } else if (isPalindrome(chars, i - max, i)) {
+                rs = i - max;
+                re = i;
+                max += 1;
+            }
+        }
+        return s.substring(rs, re + 1);
+    }
+
+    private boolean isPalindrome(char[] chars, int start, int end) {
+        if (start < 0 || start > end) {
+            return false;
+        }
+
+        while (start < end) {
+            if (chars[start++] != chars[end--]) {
+                return false;
+            }
+        }
+        return true;
     }
 }
