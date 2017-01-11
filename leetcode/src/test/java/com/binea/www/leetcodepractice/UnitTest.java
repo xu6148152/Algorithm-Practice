@@ -3,6 +3,7 @@ package com.binea.www.leetcodepractice;
 import com.binea.www.leetcodepractice.algorithm.AddBinary;
 import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
+import com.binea.www.leetcodepractice.algorithm.EliminationGame;
 import com.binea.www.leetcodepractice.algorithm.EvalRPN;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
@@ -214,5 +215,10 @@ public class UnitTest {
         };
 
         Assert.assertEquals(16, MaximumProductofWordLengths.maxProduct(strs));
+    }
+
+    @Test public void testEliminationGame() {
+        EliminationGame eliminationGame = new EliminationGame();
+        System.out.println(eliminationGame.lastRemaining(9));
     }
 }
