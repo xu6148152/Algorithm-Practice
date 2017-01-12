@@ -24,8 +24,10 @@ import com.binea.www.leetcodepractice.algorithm.SingleNumberII;
 import com.binea.www.leetcodepractice.algorithm.SortColors;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
 import com.binea.www.leetcodepractice.algorithm.TwoSum;
+import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
@@ -220,5 +222,12 @@ public class UnitTest {
     @Test public void testEliminationGame() {
         EliminationGame eliminationGame = new EliminationGame();
         System.out.println(eliminationGame.lastRemaining(9));
+    }
+
+    @Test public void testWordBreak() {
+        WordBreak wordBreak = new WordBreak();
+        String s = "leetcode";
+        List<String> dict = Arrays.asList("leet", "code");
+        System.out.println(wordBreak.wordBreak(s, dict));
     }
 }
