@@ -13,6 +13,7 @@ import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MaximumProductofWordLengths;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
+import com.binea.www.leetcodepractice.algorithm.MinimumWindowSubstring;
 import com.binea.www.leetcodepractice.algorithm.MissingNumber;
 import com.binea.www.leetcodepractice.algorithm.MoveZeros;
 import com.binea.www.leetcodepractice.algorithm.PascalTriangle;
@@ -229,5 +230,17 @@ public class UnitTest {
         String s = "leetcode";
         List<String> dict = Arrays.asList("leet", "code");
         System.out.println(wordBreak.wordBreak(s, dict));
+    }
+
+    @Test public void testMinimumWindowSubstring() {
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+        long startTime = System.currentTimeMillis();
+        MinimumWindowSubstring minimumWindowSubstring = new MinimumWindowSubstring();
+        minimumWindowSubstring.minWindow(s, t);
+        long endTime = System.currentTimeMillis();
+        System.out.printf("run time: %d", endTime - startTime);
+        System.out.println();
+        System.out.println(minimumWindowSubstring.minWindow(s ,t));
     }
 }
