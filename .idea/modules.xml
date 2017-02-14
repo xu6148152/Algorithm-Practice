@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" filepath="$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algoritm.iml" filepath="$PROJECT_DIR$/.idea/modules/Algoritm.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview/interview.iml" filepath="$PROJECT_DIR$/.idea/modules/interview/interview.iml" />

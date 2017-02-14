@@ -5,6 +5,7 @@ import com.binea.www.leetcodepractice.algorithm.BestTimeToBuyAndSellStockII;
 import com.binea.www.leetcodepractice.algorithm.CountAndSay;
 import com.binea.www.leetcodepractice.algorithm.EliminationGame;
 import com.binea.www.leetcodepractice.algorithm.EvalRPN;
+import com.binea.www.leetcodepractice.algorithm.FindMinimumInRotatedSortedArrayII;
 import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.KSmallestPairs;
@@ -28,10 +29,12 @@ import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
-import java.util.Arrays;
-import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * To work on unit tests, switch the Test Artifact in the Build Variants view.
@@ -242,5 +245,12 @@ public class UnitTest {
         System.out.printf("run time: %d", endTime - startTime);
         System.out.println();
         System.out.println(minimumWindowSubstring.minWindow(s ,t));
+    }
+
+    @Test public void testFindMinInRotatedSortedArrayII() {
+        int[] nums = {4, 5, 6, 7, 0, 1, 2};
+        FindMinimumInRotatedSortedArrayII minimumInRotatedSortedArrayII = new FindMinimumInRotatedSortedArrayII();
+        int minNum = minimumInRotatedSortedArrayII.findMin(nums);
+        System.out.print(minNum);
     }
 }

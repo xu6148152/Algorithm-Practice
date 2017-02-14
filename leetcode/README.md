@@ -129,4 +129,8 @@ My Althorithm Practice
 |120|[Elimination Game](https://leetcode.com/problems/elimination-game/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/EliminationGame.java)|Medium|
 |121|[Word Break](https://leetcode.com/problems/word-break/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/WordBreak.java)|Medium|
 |122|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/MinimumWindowSubstring.java)|Hard|
+<<<<<<< HEAD
 |123|[UTF-8 Validation](https://leetcode.com/problems/utf-8-validation/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/UTF_8_Validation.java)|Medium|
+=======
+|123|[Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)|[Java](https://github.com/xu6148152/LeetCode-Practice/blob/master/LeetCodePractice/app/src/main/java/com/binea/www/leetcodepractice/algorithm/FindMinimumInRotatedSortedArrayII.java)|Hard|
+>>>>>>> Add FindMinimumInRotatedSortedArrayII
