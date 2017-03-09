@@ -3,10 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" filepath="$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" filepath="$PROJECT_DIR$/.idea/modules/Algorithm-Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithmred4/algorithmred4.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview/interview.iml" filepath="$PROJECT_DIR$/.idea/modules/interview/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/interview/interview.iml" filepath="$PROJECT_DIR$/.idea/modules/interview/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/introduction2algorithm/introduction2algorithm.iml" filepath="$PROJECT_DIR$/.idea/modules/introduction2algorithm/introduction2algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/introduction2algorithm/introduction2algorithm.iml" filepath="$PROJECT_DIR$/.idea/modules/introduction2algorithm/introduction2algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcode/leetcode.iml" />
     </modules>
   </component>
