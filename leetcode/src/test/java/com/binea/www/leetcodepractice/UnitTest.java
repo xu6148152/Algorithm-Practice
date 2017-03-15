@@ -11,6 +11,7 @@ import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.KSmallestPairs;
 import com.binea.www.leetcodepractice.algorithm.LexicographicalNumbers;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
+import com.binea.www.leetcodepractice.algorithm.MaxSumOfRectangeNoLargerThanK;
 import com.binea.www.leetcodepractice.algorithm.MaximumProductofWordLengths;
 import com.binea.www.leetcodepractice.algorithm.MinStack;
 import com.binea.www.leetcodepractice.algorithm.MinSubArrayLen;
@@ -42,7 +43,7 @@ import java.util.List;
 public class UnitTest {
 
     @Test public void testTwoSum() {
-        int[] numbers = { 2, 7, 11, 15 };
+        int[] numbers = {2, 7, 11, 15};
         TwoSum twoSum = new TwoSum();
         final int[] ints = twoSum.twoSum(numbers, 13);
         for (int i = 0; i < ints.length; i++) {
@@ -57,14 +58,14 @@ public class UnitTest {
     }
 
     @Test public void testTopKFrequent() {
-        int[] nums = { 1, 1, 1, 2, 2, 3 };
+        int[] nums = {1, 1, 1, 2, 2, 3};
         int k = 2;
         List<Integer> results = TopKFrequent.topKFrequent(nums, k);
         System.out.print(results.toString());
     }
 
     @Test public void testMaxProfit() {
-        int[] prices = { 100, 200, 150, 180, 300 };
+        int[] prices = {100, 200, 150, 180, 300};
         int profit = BestTimeToBuyAndSellStockII.maxProfit(prices);
         System.out.print(profit);
     }
@@ -76,7 +77,7 @@ public class UnitTest {
     }
 
     @Test public void testFirstMissingPositive() {
-        int[] nums = { 3, 4, -1, 1 };
+        int[] nums = {3, 4, -1, 1};
         //int[] nums = {1,2,0};
         //int[] nums = {2};
         int value = FirstMissingPositive.firstMissingPositive(nums);
@@ -90,7 +91,7 @@ public class UnitTest {
     }
 
     @Test public void testMinSubArrayLen() {
-        int[] nums = { 2, 3, 1, 2, 4, 3 };
+        int[] nums = {2, 3, 1, 2, 4, 3};
         int len = MinSubArrayLen.minSubArrayLen(7, nums);
         System.out.print(len);
     }
@@ -109,7 +110,7 @@ public class UnitTest {
     }
 
     @Test public void testMissingNumber() {
-        int[] a = { 0, 1, 3 };
+        int[] a = {0, 1, 3};
         int result = MissingNumber.missingNumber(a);
         System.out.print(result);
     }
@@ -133,7 +134,7 @@ public class UnitTest {
     }
 
     @Test public void testJumpGame() {
-        int[] A = { 2, 3, 1, 1, 4 };
+        int[] A = {2, 3, 1, 1, 4};
         final boolean canJump = JumpGame.canJump3ms(A);
         System.out.print(canJump);
     }
@@ -144,7 +145,7 @@ public class UnitTest {
 
     @Test public void testEvalRPN() {
         //String []strs = {"2", "1", "+", "3", "*"};
-        String[] strs = { "4", "13", "5", "/", "+" };
+        String[] strs = {"4", "13", "5", "/", "+"};
         EvalRPN evalRPN = new EvalRPN();
         int result = evalRPN.evalRPN(strs);
         System.out.print(result);
@@ -165,21 +166,21 @@ public class UnitTest {
 
     @Test public void testSearchInsertPosition() {
         SearchInsertPosition searchInsertPosition = new SearchInsertPosition();
-        int[] nums = { 1, 3, 5, 6 };
+        int[] nums = {1, 3, 5, 6};
         int pos = searchInsertPosition.searchInsert(nums, 0);
         System.out.print(pos);
     }
 
     @Test public void testKSmallestPairs() {
-        int[] nums1 = { 1, 7, 11 };
-        int[] nums2 = { 2, 4, 6 };
+        int[] nums1 = {1, 7, 11};
+        int[] nums2 = {2, 4, 6};
         int k = 3;
         KSmallestPairs kSmallestPairs = new KSmallestPairs();
         final List<int[]> result = kSmallestPairs.kSmallestPairs(nums1, nums2, 3);
     }
 
     @Test public void testSingleNumbersII() {
-        int[] nums = { 1, 2, 1, 1 };
+        int[] nums = {1, 2, 1, 1};
         SingleNumberII singleNumberII = new SingleNumberII();
         int result = singleNumberII.singleNumber(nums);
         System.out.print(result);
@@ -187,13 +188,13 @@ public class UnitTest {
 
     @Test public void testSortColors() {
         SortColors sortColors = new SortColors();
-        int[] nums = { 1, 0, 2, 1, 2, 0, 1, 0, 1, 2 };
+        int[] nums = {1, 0, 2, 1, 2, 0, 1, 0, 1, 2};
         sortColors.sortColors(nums);
     }
 
     @Test public void testMoveZeros() {
         MoveZeros moveZeros = new MoveZeros();
-        int[] nums = { 0, 1, 0, 3, 12 };
+        int[] nums = {0, 1, 0, 3, 12};
         moveZeros.moveZeros(nums);
         for (int i : nums) {
             System.out.print(i + ", ");
@@ -208,7 +209,7 @@ public class UnitTest {
 
     @Test public void testWordSearch() {
         char[][] board = {
-                { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' }
+                {'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}
         };
         String s = "ABCCED";
         WordSearch wordSearch = new WordSearch();
@@ -216,7 +217,7 @@ public class UnitTest {
     }
 
     @Test public void testMaxProductOfWordLengths() {
-        String[] strs = new String[] {
+        String[] strs = new String[]{
                 "abcw", "baz", "foo", "bar", "xtfn", "abcdef"
         };
 
@@ -244,7 +245,7 @@ public class UnitTest {
         long endTime = System.currentTimeMillis();
         System.out.printf("run time: %d", endTime - startTime);
         System.out.println();
-        System.out.println(minimumWindowSubstring.minWindow(s ,t));
+        System.out.println(minimumWindowSubstring.minWindow(s, t));
     }
 
     @Test public void testFindMinInRotatedSortedArrayII() {
@@ -252,5 +253,18 @@ public class UnitTest {
         FindMinimumInRotatedSortedArrayII minimumInRotatedSortedArrayII = new FindMinimumInRotatedSortedArrayII();
         int minNum = minimumInRotatedSortedArrayII.findMin(nums);
         System.out.print(minNum);
+    }
+
+    @Test public void testMaxSumOfRectangleNoLargerThanK() {
+        MaxSumOfRectangeNoLargerThanK mso = new MaxSumOfRectangeNoLargerThanK();
+        int[][] matrix = {
+                {1, 0, 1},
+                {0, -2, 3}
+        };
+        long start = System.currentTimeMillis();
+        int result = mso.maxSumSubmatrix(matrix, 2);
+        long end = System.currentTimeMillis();
+        System.out.println(result);
+        System.out.printf("%d ms", end - start);
     }
 }
