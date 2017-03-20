@@ -268,4 +268,10 @@ public class UnitTest {
         System.out.printf("%d ms", end - start);
 
     }
+
+    @Test public void testInteger() {
+        int a = 1000;
+        Integer b = 1000;
+        System.out.print(a == b);
+    }
 }
