@@ -3,6 +3,8 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/.idea/*
+/LeetCode/build/*
 .DS_Store
 /build
 /captures
