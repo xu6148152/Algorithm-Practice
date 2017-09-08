@@ -63,13 +63,13 @@ public class Hash<K, V> {
         collided.add(cell);
     }
 
-    public V get(K key) {
-        int x = hashCodeOfKey(key);
-        if (items[x] == null) {
-            return null;
-        }
-
-        LinkedList<Cell<K, V>> collided = items[x];
-        for(Cell<K, V>)
-    }
+//    public V get(K key) {
+//        int x = hashCodeOfKey(key);
+//        if (items[x] == null) {
+//            return null;
+//        }
+//
+//        LinkedList<Cell<K, V>> collided = items[x];
+//        for(Cell<K, V>)
+//    }
 }
