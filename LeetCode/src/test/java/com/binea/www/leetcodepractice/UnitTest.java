@@ -31,6 +31,7 @@ import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
+import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -312,5 +313,11 @@ public class UnitTest {
     public void testPalindrome() {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
         palindromeNumber.isPalindrome(121);
+    }
+
+    @Test
+    public void testValidParentheses() {
+        ValidParentheses validParentheses = new ValidParentheses();
+        System.out.println(validParentheses.isValid("((([])[]))"));
     }
 }

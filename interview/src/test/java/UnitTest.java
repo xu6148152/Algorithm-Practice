@@ -13,7 +13,7 @@ public class UnitTest {
     public void testGetLongestSubArray() {
         int[] array = {10, 1, 3, 2, 5, 7, 8, 9, 6, 4};
         LongestIncreasingArray longestIncreasingArray = new LongestIncreasingArray();
-        int[] result = longestIncreasingArray.getLongestIncreasingArray(array);
+        int[] result = longestIncreasingArray.getLongestIncreasingArrayDp(array);
         for (int i : result) {
             System.out.print(i);
         }

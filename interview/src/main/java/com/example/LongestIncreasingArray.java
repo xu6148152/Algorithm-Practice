@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.Arrays;
+
 /**
  * Created by binea on 8/9/2017.
  */
@@ -48,5 +50,21 @@ public class LongestIncreasingArray {
             if (i == size) ++size;
         }
         return size;
+    }
+
+    public int[] getLongestIncreasingArrayDp(int[] nums) {
+        int[] dp = new int[nums.length];
+        int len = 0;
+        for (int num : nums) {
+            int i = Arrays.binarySearch(dp, 0, len, num);
+            if (i < 0) {
+                i = -(i + 1);
+            }
+            dp[i] = num;
+            if (i == len) {
+                len++;
+            }
+        }
+        return dp;
     }
 }
