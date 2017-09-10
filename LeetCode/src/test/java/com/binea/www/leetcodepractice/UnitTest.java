@@ -31,6 +31,7 @@ import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
+import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
 import org.junit.Assert;
@@ -319,5 +320,12 @@ public class UnitTest {
     public void testValidParentheses() {
         ValidParentheses validParentheses = new ValidParentheses();
         System.out.println(validParentheses.isValid("((([])[]))"));
+    }
+
+    @Test
+    public void testRemoveDuplicatesFromSortedArray() {
+        RemoveDuplicatesFromSortedArray array = new RemoveDuplicatesFromSortedArray();
+        int[] a = {1, 1, 2};
+        System.out.print(array.removeDuplicates(a));
     }
 }
