@@ -30,6 +30,7 @@ import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
+import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
@@ -336,5 +337,12 @@ public class UnitTest {
         String hayStack = "mississippi";
         String needle = "issip";
         System.out.print(strStr.strStr(hayStack, needle));
+    }
+
+    @Test
+    public void testMaxSubArray() {
+        MaxSubArray msa = new MaxSubArray();
+        int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        System.out.print(msa.maxSubArray(nums));
     }
 }
