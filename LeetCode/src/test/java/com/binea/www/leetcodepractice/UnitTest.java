@@ -32,6 +32,7 @@ import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
+import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
@@ -344,5 +345,12 @@ public class UnitTest {
         MaxSubArray msa = new MaxSubArray();
         int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.print(msa.maxSubArray(nums));
+    }
+
+    @Test
+    public void testAddPlus() {
+        int[] digits = {9, 9};
+        PlusOne plusOne = new PlusOne();
+        plusOne.plusOne(digits);
     }
 }
