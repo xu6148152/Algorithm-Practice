@@ -34,6 +34,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
+import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
@@ -352,5 +353,11 @@ public class UnitTest {
         int[] digits = {9, 9};
         PlusOne plusOne = new PlusOne();
         plusOne.plusOne(digits);
+    }
+
+    @Test
+    public void testSqrt() {
+        Sqrt sqrt = new Sqrt();
+        System.out.print(sqrt.mySqrt(3));
     }
 }
