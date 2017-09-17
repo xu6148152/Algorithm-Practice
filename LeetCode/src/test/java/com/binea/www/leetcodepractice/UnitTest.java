@@ -30,6 +30,7 @@ import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
+import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
@@ -369,5 +370,14 @@ public class UnitTest {
         for (Integer integer : result) {
             System.out.print(integer);
         }
+    }
+
+    @Test
+    public void testBestTimeToBuyAndSellStock() {
+        BestTimetoBuyandSellStock bestTimetoBuyandSellStock = new BestTimetoBuyandSellStock();
+//        int[] stocks = {7, 1, 5, 3, 6, 4};
+        int[] stocks = {7, 6, 4, 3, 1};
+        int maxProfit = bestTimetoBuyandSellStock.maxProfit(stocks);
+        System.out.print(maxProfit);
     }
 }
