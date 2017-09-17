@@ -32,6 +32,7 @@ import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
+import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
@@ -359,5 +360,14 @@ public class UnitTest {
     public void testSqrt() {
         Sqrt sqrt = new Sqrt();
         System.out.print(sqrt.mySqrt(3));
+    }
+
+    @Test
+    public void testPascalTriangleII() {
+        PascalsTriangleII pascalsTriangleII = new PascalsTriangleII();
+        List<Integer> result = pascalsTriangleII.getRowOk(3);
+        for (Integer integer : result) {
+            System.out.print(integer);
+        }
     }
 }
