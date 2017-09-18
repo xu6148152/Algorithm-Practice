@@ -23,6 +23,7 @@ import com.binea.www.leetcodepractice.algorithm.RepeatedSubstringPattern;
 import com.binea.www.leetcodepractice.algorithm.ReverseInteger;
 import com.binea.www.leetcodepractice.algorithm.ReverseWords;
 import com.binea.www.leetcodepractice.algorithm.SearchInsertPosition;
+import com.binea.www.leetcodepractice.algorithm.SingleNumber;
 import com.binea.www.leetcodepractice.algorithm.SingleNumberII;
 import com.binea.www.leetcodepractice.algorithm.SortColors;
 import com.binea.www.leetcodepractice.algorithm.TopKFrequent;
@@ -379,5 +380,12 @@ public class UnitTest {
         int[] stocks = {7, 6, 4, 3, 1};
         int maxProfit = bestTimetoBuyandSellStock.maxProfit(stocks);
         System.out.print(maxProfit);
+    }
+
+    @Test
+    public void testSingleNumber() {
+        int[] nums = {0, 1, 0};
+        SingleNumber singleNumber = new SingleNumber();
+        System.out.print(singleNumber.singleNumber(nums));
     }
 }
