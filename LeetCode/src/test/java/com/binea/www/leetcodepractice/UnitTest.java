@@ -39,6 +39,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
+import com.binea.www.leetcodepractice.algorithm.easy.TwoSumII;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
 import org.junit.Assert;
@@ -387,5 +388,15 @@ public class UnitTest {
         int[] nums = {0, 1, 0};
         SingleNumber singleNumber = new SingleNumber();
         System.out.print(singleNumber.singleNumber(nums));
+    }
+
+    @Test
+    public void testTwoSumII() {
+        int[] nums = {2, 7, 11, 15};
+        TwoSumII twoSumII = new TwoSumII();
+        int[] results = twoSumII.twoSum(nums, 9);
+        for (int i : results) {
+            System.out.println(i);
+        }
     }
 }
