@@ -32,6 +32,7 @@ import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
+import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
@@ -398,5 +399,12 @@ public class UnitTest {
         for (int i : results) {
             System.out.println(i);
         }
+    }
+
+    @Test
+    public void testExcelSheetColumnTitle() {
+        int n = 26;
+        ExcelSheetColumnTitle title = new ExcelSheetColumnTitle();
+        System.out.println(title.convertToTitle(n));
     }
 }
