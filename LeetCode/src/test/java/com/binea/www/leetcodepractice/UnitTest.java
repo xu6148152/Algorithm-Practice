@@ -38,6 +38,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
+import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
 import com.binea.www.leetcodepractice.algorithm.easy.TwoSumII;
@@ -406,5 +407,15 @@ public class UnitTest {
         int n = 26;
         ExcelSheetColumnTitle title = new ExcelSheetColumnTitle();
         System.out.println(title.convertToTitle(n));
+    }
+
+    @Test
+    public void testRotateArray() {
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        RotateArray rotateArray = new RotateArray();
+        rotateArray.rotateReverse(nums, 3);
+        for (int i : nums) {
+            System.out.print(i);
+        }
     }
 }
