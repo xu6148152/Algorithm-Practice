@@ -38,6 +38,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
+import com.binea.www.leetcodepractice.algorithm.easy.ReverseBits;
 import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
@@ -417,5 +418,11 @@ public class UnitTest {
         for (int i : nums) {
             System.out.print(i);
         }
+    }
+
+    @Test
+    public void testReverseBits() {
+        ReverseBits reverseBits = new ReverseBits();
+        System.out.println(reverseBits.reverseBits1ms(43261596));
     }
 }
