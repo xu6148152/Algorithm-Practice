@@ -168,3 +168,4 @@ My Althorithm Practice
 |159|[House Robber](https://leetcode.com/problems/house-robber)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/HouseRobber.java)|Easy|
 |160|[Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/RemoveLinkedListElements.java)|Easy|
 |161|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ReverseLinkedList.java)|Easy|
+|162|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ContainsDuplicate.java)|Easy|
