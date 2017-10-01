@@ -170,3 +170,4 @@ My Althorithm Practice
 |161|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ReverseLinkedList.java)|Easy|
 |162|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ContainsDuplicate.java)|Easy|
 |163|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/CombineTwoTable.sql)|Easy|
+|164|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/SecondHighestSalary.sql)|Easy|
