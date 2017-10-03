@@ -172,3 +172,4 @@ My Althorithm Practice
 |163|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/CombineTwoTable.sql)|Easy|
 |164|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/SecondHighestSalary.sql)|Easy|
 |165|[Tenth Line](https://leetcode.com/problems/tenth-line)|[bash](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/TenthLine.bash)|Easy|
+|166|[Rising Temperature](https://leetcode.com/problems/rising-temperature)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/RisingTemperature.sql)|Easy|
