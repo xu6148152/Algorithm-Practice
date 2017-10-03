@@ -171,3 +171,4 @@ My Althorithm Practice
 |162|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ContainsDuplicate.java)|Easy|
 |163|[Combine Two Tables](https://leetcode.com/problems/combine-two-tables)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/CombineTwoTable.sql)|Easy|
 |164|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/SecondHighestSalary.sql)|Easy|
+|165|[Tenth Line](https://leetcode.com/problems/tenth-line)|[bash](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/TenthLine.bash)|Easy|
