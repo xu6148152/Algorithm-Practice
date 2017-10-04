@@ -173,3 +173,4 @@ My Althorithm Practice
 |164|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/SecondHighestSalary.sql)|Easy|
 |165|[Tenth Line](https://leetcode.com/problems/tenth-line)|[bash](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/TenthLine.bash)|Easy|
 |166|[Rising Temperature](https://leetcode.com/problems/rising-temperature)|[MySql](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/RisingTemperature.sql)|Easy|
+|167|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ContainsDuplicateII.sql)|Easy|
