@@ -37,6 +37,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
+import com.binea.www.leetcodepractice.algorithm.easy.PowerOfTwo;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.ReverseBits;
 import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
@@ -424,5 +425,11 @@ public class UnitTest {
     public void testReverseBits() {
         ReverseBits reverseBits = new ReverseBits();
         System.out.println(reverseBits.reverseBits1ms(43261596));
+    }
+
+    @Test
+    public void testPowerOfTwo() {
+        PowerOfTwo powerOfTwo = new PowerOfTwo();
+        System.out.println(powerOfTwo.isPowerOfTwo(1022));
     }
 }
