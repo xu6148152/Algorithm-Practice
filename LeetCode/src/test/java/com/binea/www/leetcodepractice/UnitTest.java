@@ -437,8 +437,12 @@ public class UnitTest {
 
     @Test
     public void testPalindromeLinkedList() {
-        ListNode head = new ListNode(-129);
+        ListNode head = new ListNode(1);
         head.next = new ListNode(-129);
+        head.next.next = new ListNode(-230);
+        head.next.next.next = new ListNode(-230);
+        head.next.next.next.next = new ListNode(-129);
+        head.next.next.next.next.next = new ListNode(1);
         PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
         System.out.println(palindromeLinkedList.isPalindrome(head));
     }
