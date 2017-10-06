@@ -10,6 +10,7 @@ import com.binea.www.leetcodepractice.algorithm.FirstMissingPositive;
 import com.binea.www.leetcodepractice.algorithm.JumpGame;
 import com.binea.www.leetcodepractice.algorithm.KSmallestPairs;
 import com.binea.www.leetcodepractice.algorithm.LexicographicalNumbers;
+import com.binea.www.leetcodepractice.algorithm.ListNode;
 import com.binea.www.leetcodepractice.algorithm.LongestSubString;
 import com.binea.www.leetcodepractice.algorithm.MaxSumOfRectangeNoLargerThanK;
 import com.binea.www.leetcodepractice.algorithm.MaximumProductofWordLengths;
@@ -34,6 +35,7 @@ import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
+import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
@@ -431,5 +433,13 @@ public class UnitTest {
     public void testPowerOfTwo() {
         PowerOfTwo powerOfTwo = new PowerOfTwo();
         System.out.println(powerOfTwo.isPowerOfTwo(1022));
+    }
+
+    @Test
+    public void testPalindromeLinkedList() {
+        ListNode head = new ListNode(-129);
+        head.next = new ListNode(-129);
+        PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
+        System.out.println(palindromeLinkedList.isPalindrome(head));
     }
 }
