@@ -33,6 +33,7 @@ import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
 import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
+import com.binea.www.leetcodepractice.algorithm.easy.DeleteNodeInALinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
@@ -52,6 +53,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -445,5 +447,17 @@ public class UnitTest {
         head.next.next.next.next.next = new ListNode(1);
         PalindromeLinkedList palindromeLinkedList = new PalindromeLinkedList();
         System.out.println(palindromeLinkedList.isPalindrome(head));
+    }
+
+    @Test
+    public void testDeleteNodeInALinkedList() {
+        ListNode oneNode = new ListNode(1);
+        ListNode twoNode = new ListNode(2);
+        oneNode.next = twoNode;
+        oneNode.next.next = new ListNode(3);
+        oneNode.next.next.next = new ListNode(4);
+
+        DeleteNodeInALinkedList deleteNodeInALinkedList = new DeleteNodeInALinkedList();
+        deleteNodeInALinkedList.deleteNode(oneNode, twoNode);
     }
 }

@@ -178,3 +178,4 @@ My Althorithm Practice
 |169|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/MyQueue.java)|Easy|
 |170|[Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/PalindromeLinkedList.java)|Easy|
 |171|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/LowestCommonAncestorOfABinarySearchTree.java)|Easy|
+|172|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/DeleteNodeInALinkedList.java)|Easy|
