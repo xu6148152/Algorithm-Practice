@@ -47,6 +47,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
 import com.binea.www.leetcodepractice.algorithm.easy.TwoSumII;
+import com.binea.www.leetcodepractice.algorithm.easy.ValidAnagram;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
 import org.junit.Assert;
@@ -459,5 +460,13 @@ public class UnitTest {
 
         DeleteNodeInALinkedList deleteNodeInALinkedList = new DeleteNodeInALinkedList();
         deleteNodeInALinkedList.deleteNode(oneNode, twoNode);
+    }
+
+    @Test
+    public void testValidAnagram() {
+        ValidAnagram validAnagram = new ValidAnagram();
+        String s = "anagram";
+        String t = "nagaram";
+        System.out.print(validAnagram.isAnagram(s, t));
     }
 }
