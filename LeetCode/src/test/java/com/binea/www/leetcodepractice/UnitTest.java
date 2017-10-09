@@ -32,6 +32,7 @@ import com.binea.www.leetcodepractice.algorithm.TwoSum;
 import com.binea.www.leetcodepractice.algorithm.WordBreak;
 import com.binea.www.leetcodepractice.algorithm.WordSearch;
 import com.binea.www.leetcodepractice.algorithm.ZigZagConversion;
+import com.binea.www.leetcodepractice.algorithm.easy.AddDigits;
 import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
 import com.binea.www.leetcodepractice.algorithm.easy.DeleteNodeInALinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
@@ -468,5 +469,12 @@ public class UnitTest {
         String s = "anagram";
         String t = "nagaram";
         System.out.print(validAnagram.isAnagram(s, t));
+    }
+
+    @Test
+    public void testAddDigits() {
+        AddDigits addDigits = new AddDigits();
+        int num = 38;
+        System.out.print(addDigits.addDigits(num));
     }
 }

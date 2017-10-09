@@ -180,3 +180,4 @@ My Althorithm Practice
 |171|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/LowestCommonAncestorOfABinarySearchTree.java)|Easy|
 |172|[Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/DeleteNodeInALinkedList.java)|Easy|
 |173|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ValidAnagram.java)|Easy|
+|174|[Add Digits](https://leetcode.com/problems/add-digits)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/AddDigits.java)|Easy|
