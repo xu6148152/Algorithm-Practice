@@ -48,6 +48,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
 import com.binea.www.leetcodepractice.algorithm.easy.TwoSumII;
+import com.binea.www.leetcodepractice.algorithm.easy.UglyNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidAnagram;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 
@@ -476,5 +477,12 @@ public class UnitTest {
         AddDigits addDigits = new AddDigits();
         int num = 38;
         System.out.print(addDigits.addDigits(num));
+    }
+
+    @Test
+    public void testUglyNumber() {
+        UglyNumber uglyNumber = new UglyNumber();
+        System.out.println(uglyNumber.isUgly(8));
+        System.out.println(uglyNumber.isUgly(14));
     }
 }
