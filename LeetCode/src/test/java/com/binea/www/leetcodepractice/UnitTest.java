@@ -36,6 +36,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.AddDigits;
 import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
 import com.binea.www.leetcodepractice.algorithm.easy.DeleteNodeInALinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
+import com.binea.www.leetcodepractice.algorithm.easy.FirstBadVersion;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
@@ -484,5 +485,11 @@ public class UnitTest {
         UglyNumber uglyNumber = new UglyNumber();
         System.out.println(uglyNumber.isUgly(8));
         System.out.println(uglyNumber.isUgly(14));
+    }
+
+    @Test
+    public void testFistBadVersion() {
+        FirstBadVersion firstBadVersion = new FirstBadVersion();
+        System.out.print(firstBadVersion.firstBadVersion(3));
     }
 }

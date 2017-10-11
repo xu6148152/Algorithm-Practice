@@ -182,3 +182,4 @@ My Althorithm Practice
 |173|[Valid Anagram](https://leetcode.com/problems/valid-anagram)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ValidAnagram.java)|Easy|
 |174|[Add Digits](https://leetcode.com/problems/add-digits)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/AddDigits.java)|Easy|
 |175|[Ugly Number](https://leetcode.com/problems/ugly-number)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/UglyNumber.java)|Easy|
+|176|[First Bad Version](https://leetcode.com/problems/first-bad-version)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/FirstBadVersion.java)|Easy|
