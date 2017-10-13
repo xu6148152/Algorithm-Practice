@@ -52,6 +52,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.TwoSumII;
 import com.binea.www.leetcodepractice.algorithm.easy.UglyNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidAnagram;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
+import com.binea.www.leetcodepractice.algorithm.easy.WordPattern;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -491,5 +492,11 @@ public class UnitTest {
     public void testFistBadVersion() {
         FirstBadVersion firstBadVersion = new FirstBadVersion();
         System.out.print(firstBadVersion.firstBadVersion(3));
+    }
+
+    @Test
+    public void testWordPattern() {
+        WordPattern wordPattern = new WordPattern();
+        System.out.print(wordPattern.wordPattern("abc", "b c a"));
     }
 }
