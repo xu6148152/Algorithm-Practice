@@ -38,6 +38,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.DeleteNodeInALinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
 import com.binea.www.leetcodepractice.algorithm.easy.FirstBadVersion;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
+import com.binea.www.leetcodepractice.algorithm.easy.NimGame;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
@@ -498,5 +499,11 @@ public class UnitTest {
     public void testWordPattern() {
         WordPattern wordPattern = new WordPattern();
         System.out.print(wordPattern.wordPattern("abc", "b c a"));
+    }
+
+    @Test
+    public void testNimGame() {
+        NimGame nimGame = new NimGame();
+        System.out.print(nimGame.canWinNim(4));
     }
 }
