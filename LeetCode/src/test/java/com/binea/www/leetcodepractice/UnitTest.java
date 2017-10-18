@@ -44,6 +44,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
 import com.binea.www.leetcodepractice.algorithm.easy.PlusOne;
 import com.binea.www.leetcodepractice.algorithm.easy.PowerOfTwo;
+import com.binea.www.leetcodepractice.algorithm.easy.RangeSumQueryImmutable;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.ReverseBits;
 import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
@@ -505,5 +506,12 @@ public class UnitTest {
     public void testNimGame() {
         NimGame nimGame = new NimGame();
         System.out.print(nimGame.canWinNim(4));
+    }
+
+    @Test
+    public void testRangeSumQueryImmutable() {
+        int[] nums = {-2, 0, 3, -5, 2, -1};
+        RangeSumQueryImmutable rangeSumQueryImmutable = new RangeSumQueryImmutable(nums);
+        System.out.println(rangeSumQueryImmutable.sumRange(0, 2));
     }
 }
