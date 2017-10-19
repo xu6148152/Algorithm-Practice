@@ -47,6 +47,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.PowerOfTwo;
 import com.binea.www.leetcodepractice.algorithm.easy.RangeSumQueryImmutable;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.ReverseBits;
+import com.binea.www.leetcodepractice.algorithm.easy.ReverseString;
 import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
@@ -513,5 +514,11 @@ public class UnitTest {
         int[] nums = {-2, 0, 3, -5, 2, -1};
         RangeSumQueryImmutable rangeSumQueryImmutable = new RangeSumQueryImmutable(nums);
         System.out.println(rangeSumQueryImmutable.sumRange(0, 2));
+    }
+
+    @Test
+    public void testReverseString() {
+        ReverseString reverseString = new ReverseString();
+        System.out.print(reverseString.reverseString("hello"));
     }
 }

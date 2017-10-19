@@ -186,3 +186,4 @@ My Althorithm Practice
 |177|[Word Pattern](https://leetcode.com/problems/word-pattern)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/WordPattern.java)|Easy|
 |178|[Nim Game](https://leetcode.com/problems/nim-game)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/NimGame.java)|Easy|
 |179|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/RangeSumQueryImmutable.java)|Easy|
+|180|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ReverseString.java)|Easy|
