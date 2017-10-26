@@ -48,6 +48,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.RangeSumQueryImmutable;
 import com.binea.www.leetcodepractice.algorithm.easy.RemoveDuplicatesFromSortedArray;
 import com.binea.www.leetcodepractice.algorithm.easy.ReverseBits;
 import com.binea.www.leetcodepractice.algorithm.easy.ReverseString;
+import com.binea.www.leetcodepractice.algorithm.easy.ReverseVowelsOfAString;
 import com.binea.www.leetcodepractice.algorithm.easy.RotateArray;
 import com.binea.www.leetcodepractice.algorithm.easy.Sqrt;
 import com.binea.www.leetcodepractice.algorithm.easy.StrStr;
@@ -520,5 +521,12 @@ public class UnitTest {
     public void testReverseString() {
         ReverseString reverseString = new ReverseString();
         System.out.print(reverseString.reverseString("hello"));
+    }
+
+    @Test
+    public void testReverseVowelsOfStrings() {
+        ReverseVowelsOfAString reverseVowelsOfAString = new ReverseVowelsOfAString();
+        String result = reverseVowelsOfAString.reverseVowels("leetcode");
+        System.out.print(result);
     }
 }
