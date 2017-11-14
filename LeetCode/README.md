@@ -188,3 +188,4 @@ My Althorithm Practice
 |179|[Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/RangeSumQueryImmutable.java)|Easy|
 |180|[Reverse String](https://leetcode.com/problems/reverse-string/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ReverseString.java)|Easy|
 |181|[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/ReverseVowelsOfAString.java)|Easy|
+|182|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[Java](./src/main/java/com/binea/www/leetcodepractice/algorithm/easy/IntersectionofTwoArrays.java)|Easy|

@@ -37,6 +37,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.BestTimetoBuyandSellStock;
 import com.binea.www.leetcodepractice.algorithm.easy.DeleteNodeInALinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.ExcelSheetColumnTitle;
 import com.binea.www.leetcodepractice.algorithm.easy.FirstBadVersion;
+import com.binea.www.leetcodepractice.algorithm.easy.IntersectionofTwoArrays;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.NimGame;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
@@ -528,5 +529,14 @@ public class UnitTest {
         ReverseVowelsOfAString reverseVowelsOfAString = new ReverseVowelsOfAString();
         String result = reverseVowelsOfAString.reverseVowels("leetcode");
         System.out.print(result);
+    }
+
+    @Test
+    public void testIntersectionofTwoArrays() {
+        IntersectionofTwoArrays intersectionofTwoArrays = new IntersectionofTwoArrays();
+        int[] nums1 = {1, 2, 2, 3};
+        int[] nums2 = {2, 4};
+        int[] intersection = intersectionofTwoArrays.intersection(nums1, nums2);
+        Arrays.stream(intersection).forEach(System.out::print);
     }
 }
