@@ -1,1 +1,1 @@
-include ':app', ':leetcode', ':introduction2algorithm', ':algorithmred4', ':interview'
+include ':app', ':LeetCode', ':introduction2algorithm', ':algorithmred4', ':interview'
