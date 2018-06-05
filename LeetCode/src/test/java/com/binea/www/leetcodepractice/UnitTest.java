@@ -40,6 +40,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.FirstBadVersion;
 import com.binea.www.leetcodepractice.algorithm.easy.IntersectionofTwoArrays;
 import com.binea.www.leetcodepractice.algorithm.easy.MaxSubArray;
 import com.binea.www.leetcodepractice.algorithm.easy.NimGame;
+import com.binea.www.leetcodepractice.algorithm.easy.NonDecreasingArray;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeLinkedList;
 import com.binea.www.leetcodepractice.algorithm.easy.PalindromeNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.PascalsTriangleII;
@@ -538,5 +539,13 @@ public class UnitTest {
         int[] nums2 = {2, 4};
         int[] intersection = intersectionofTwoArrays.intersection(nums1, nums2);
         Arrays.stream(intersection).forEach(System.out::print);
+    }
+
+    @Test
+    public void testNonDecreasingArray() {
+        int[] nums = {1, 2, 3, 0};
+        NonDecreasingArray nonDecreasingArray = new NonDecreasingArray();
+        boolean ret = nonDecreasingArray.checkPossibility(nums);
+        System.out.println(ret);
     }
 }
