@@ -1,5 +1,7 @@
 package com.binea.www.leetcodepractice.algorithm.easy;
 
+import javax.swing.border.MatteBorder;
+
 /**
  * Created by binea on 14/9/2017.
  */
@@ -14,12 +16,12 @@ public class Sqrt {
      * @param x
      * @return
      */
-    public int mySqrt(int x) {
+    public float mySqrt(float x) {
         if (x == 0)
             return 0;
-        int left = 1, right = Integer.MAX_VALUE;
+        float left = 1, right = x;
         while (true) {
-            int mid = left + (right - left) / 2;
+            float mid = left + (right - left) / 2f;
             if (mid > x / mid) {
                 right = mid - 1;
             } else {
@@ -28,5 +30,12 @@ public class Sqrt {
                 left = mid + 1;
             }
         }
+    }
+
+    public float newtonSqrt(float x) {
+        float r = x;
+        while (Math.abs(r * r - x) > 1e-9)
+            r = (r + x / r) / 2f;
+        return r;
     }
 }

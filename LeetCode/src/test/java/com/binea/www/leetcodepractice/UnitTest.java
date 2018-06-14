@@ -382,6 +382,8 @@ public class UnitTest {
     public void testSqrt() {
         Sqrt sqrt = new Sqrt();
         System.out.print(sqrt.mySqrt(3));
+//        System.out.println();
+//        System.out.println(sqrt.newtonSqrt(3));
     }
 
     @Test
