@@ -59,6 +59,7 @@ import com.binea.www.leetcodepractice.algorithm.easy.UglyNumber;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidAnagram;
 import com.binea.www.leetcodepractice.algorithm.easy.ValidParentheses;
 import com.binea.www.leetcodepractice.algorithm.easy.WordPattern;
+import com.binea.www.leetcodepractice.algorithm.hard.MedianOfTwoSortedArrays;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -549,5 +550,15 @@ public class UnitTest {
         NonDecreasingArray nonDecreasingArray = new NonDecreasingArray();
         boolean ret = nonDecreasingArray.checkPossibility(nums);
         System.out.println(ret);
+    }
+
+    @Test
+    public void testMedianOfTwoSortedArrays() {
+        int[] nums1 = {1, 3};
+        int[] nums2 = {2};
+
+        MedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArrays();
+        double median = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
+        System.out.println(median);
     }
 }
