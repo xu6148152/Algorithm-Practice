@@ -1,0 +1,24 @@
+                    Executable : /Users/xubinggui/Library/Android/sdk/cmake/3.18.1/bin/cmake
+arguments : 
+-H/Users/xubinggui/xu/algorithm/Algorithm-Practice/app
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=18
+-DANDROID_PLATFORM=android-18
+-DANDROID_ABI=x86
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DANDROID_NDK=/Users/xubinggui/Library/Android/sdk/ndk/21.4.7075529
+-DCMAKE_ANDROID_NDK=/Users/xubinggui/Library/Android/sdk/ndk/21.4.7075529
+-DCMAKE_TOOLCHAIN_FILE=/Users/xubinggui/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/xubinggui/Library/Android/sdk/cmake/3.18.1/bin/ninja
+-DCMAKE_CXX_FLAGS=-frtti -fexceptions
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/xubinggui/xu/algorithm/Algorithm-Practice/app/build/intermediates/cxx/Debug/613d1b2w/obj/x86
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/xubinggui/xu/algorithm/Algorithm-Practice/app/build/intermediates/cxx/Debug/613d1b2w/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/xubinggui/xu/algorithm/Algorithm-Practice/app/.cxx/Debug/613d1b2w/x86
+-GNinja
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2
